@@ -1,0 +1,122 @@
+main {
+  /* Margine aggiunto per la navbar in basso */
+  margin-bottom: 80px;
+}
+
+/* Navbar */
+
+nav ul li a span>span {
+  display: none;
+}
+
+
+/* Notifiche */
+.toast {
+  display: none;
+}
+
+.notification-toast {
+  z-index: 1050;
+}
+
+/* Logo */
+header>a {
+  font-weight: 800;
+  position: relative;
+  font-size: 1.5rem;
+  background-size: 200% 200%;
+  color: white;
+  background: white;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+}
+
+div>form div>a {
+  font-weight: 800;
+  position: relative;
+  font-size: 1.5rem;
+  background-size: 200% 200%;
+  color: #343a40;
+  background: #343a40;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+}
+
+article[data-current-status="pending"] select,
+article[data-current-status="pending"] section>span,
+strong[data-order-status="pending"] {
+  color: #4a4a4a !important;
+}
+
+article[data-current-status="processing"] select,
+article[data-current-status="processing"] section>span,
+strong[data-order-status="processing"] {
+  color: #cc5500 !important;
+}
+
+article[data-current-status="shipped"] select,
+article[data-current-status="shipped"] section>span,
+strong[data-order-status="shipped"] {
+  color: #0056b3 !important;
+}
+
+article[data-current-status="completed"] select,
+article[data-current-status="completed"] section>span,
+strong[data-order-status="completed"] {
+  color: #006633 !important;
+}
+
+header>a::after,
+div>form div>a::after {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  z-index: -1;
+  color: rgba(0, 0, 0, 0.3);
+  filter: blur(3px);
+}
+
+header>a:hover,
+div>form div>a:hover {
+  transform: scale(1.05) translateY(-2px);
+  letter-spacing: 2px;
+  background-position: 100% 100%;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Bottoni incremento/decremento */
+article section div>button[type="button"] {
+  height: 2rem;
+  width: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Immagini prodotti */
+
+section article div img {
+  max-height: 70px;
+  object-fit: cover;
+}
+
+article section a>img {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+section figure img,
+form section img {
+  max-height: 300px;
+  max-width: 300px;
+}

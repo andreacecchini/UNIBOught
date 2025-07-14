@@ -1,0 +1,4 @@
+# Ignora tutte le immagini caricate dei prodotti
+public/images/
+public/.htaccess
+node_modules/

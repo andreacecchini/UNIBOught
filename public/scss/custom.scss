@@ -1,0 +1,22 @@
+$primary: #bb2e29;
+$secondary: #a22320;
+$success: #006633;
+$info: #29B6BB;;
+$warning: #cc5500;
+$danger: #8a1717;
+$light: #f7f7f7;
+$dark: #343a40;
+
+// // (Opzionale) Aggiungi la palette a una mappa personalizzata per Bootstrap
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger,
+  "secondary": $secondary,
+  "info": $info,
+  "success": $success,
+  "warning": $warning,
+  "light": $light,
+  "dark": $dark
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
